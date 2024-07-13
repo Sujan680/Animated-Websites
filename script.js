@@ -9,7 +9,19 @@ document.addEventListener('mousemove', function(dets){
     blr.style.top = dets.y - 150 +"px"
 })
 
-
+let h4all = document.querySelectorAll("#nav h4")
+h4all.forEach(function(elem){
+    elem.addEventListener('mouseenter', function(){
+        crsr.style.scale = 3
+        crsr.style.border = "1px solid #fff"
+        crsr.style.backgroundColor = "transparent"
+    })
+    elem.addEventListener('mouseleave', function(){
+        crsr.style.scale = 1
+        crsr.style.border = "0px solid #95C11E"
+        crsr.style.backgroundColor = "transparent"
+    })
+})
 
 gsap.to("#nav", {
     backgroundColor: "#000",
@@ -35,4 +47,19 @@ gsap.to("#main", {
         end: "top -70%",
         scrub: 2
     }
+})
+
+gsap.from("#about-using, #about-us-in",{
+    y:50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#about-us",
+        scroller: "body",
+        markers: true,
+        start:"top 60%",
+        end: "top 58%",
+        scrub: 3
+    }
+
 })

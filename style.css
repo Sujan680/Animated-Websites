@@ -288,3 +288,36 @@ video{
     object-fit: cover;
     width: 14%;
 }
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+#page3 >p{
+    font-size: 20px;
+    font-weight: 600;
+    width: 55%;
+    line-height: 45px;
+    text-align: center;
+}
+
+#page3 img{
+    position: absolute;
+    height: 60px;
+}
+
+#page3 #col1{
+    left: 10%;
+    top: 25%;
+}
+
+#page3 #col2{
+    bottom: 25%;
+    right: 15%;
+}
