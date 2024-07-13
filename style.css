@@ -321,3 +321,139 @@ video{
     bottom: 25%;
     right: 15%;
 }
+
+#page4{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+}
+
+.element{
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.element h2{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000;
+    padding: 0 20px;
+    transition: all 0.4s ease-in;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+}
+
+.element img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.element:hover h2{
+    color: #fff;
+    background-color: transparent;
+}
+
+.element:hover img{
+   scale: 1;
+}
+
+#page4 h1 {
+    font-size:90px ;
+    position: absolute;
+    top: -12%;
+    color: #000;
+    font-family: gilroy;
+    -webkit-text-stroke: 2px #fff;
+}
+#footer{
+    height: 50vh;
+    width: 100%;
+    background: #95C11E;
+}
+.footer-items {
+    height: 40vh;
+    width: 100%;
+    /* background-color: #95C11E; */
+    /* background: linear-gradient(to left bottom, #119F3A,#ACE022); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 40px;
+}
+.item2 h3, .item3 h3{
+    font-size: 30px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.item1 img{
+    width: 100px;
+}
+
+.icons{
+    margin-top: 40px;
+   font-size: 40px;
+}
+
+.item4 h5 {
+    font-size: 16px;
+    color: #000;
+}
+
+
+.last-item1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 0 50px;
+}
+
+.items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+.items h6{
+    color: #000;
+    font-size: 16px;
+}
+
+.last-item2{
+    font-weight: 600;
+    color: #000;
+}
